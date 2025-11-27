@@ -27,7 +27,7 @@
 - npm version: 10.9.2
 
 ### นางสาว อรนุช  ลุงหลิ่ง
-- OS: xxxx
-- Git version: xxxxx
-- Node.js version: xxxxxxx
-- npm version: xxxxxx
+- OS: Edition	Windows 10
+- Git version: 2.43.0
+- Node.js version: v20.19.5
+- npm version: 10.8.2
