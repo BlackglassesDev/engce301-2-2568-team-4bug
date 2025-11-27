@@ -15,5 +15,5 @@
    - (จิดาภา กันทวงศ์) น่าจะ Elements คิดว่าจะได้ใชบ่อยสุดในเทอมนี้เพราะชอบใช้ส่วนนี้ในการแก้หน้าเว็บและศึกษาว่าแก้แล้วจะออกมา
    เป็นอย่างไร
 
-4)  - Link to ENVIRONMENT.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/ENVIRONMENT.md
-    - Link to SE_INTRO_NOTES.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/SE_INTRO_NOTES.md
+4)  - [ENVIRONMENT.md](./ENVIRONMENT.md)
+    - [SE_INTRO_NOTES.md](./SE_INTRO_NOTES.md)
