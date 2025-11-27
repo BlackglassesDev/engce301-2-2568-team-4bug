@@ -12,5 +12,5 @@
    - (A) ชอบ Console เพราะใช้ดู error message ของ JavaScript  
    - (อรนุช ลุงหลิ่ง) ชอบ Elements เพราะมักจะมีปัญหาในส่วนของ UI CSS บ่อย และชอบใช้ส่วนนี้ในการแก้ปัญหาแต่ละครั้งไม่ว่าจะเป็นปัญหาในเรื่อง เช่น การจัดวางที่เพี้ยน หรือเจอบัคโค้ดไม่แสดงบนเว็บจริง
 
-[text][ENVIRONMENT.md]
-[ENVIRONMENT]: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/ENVIRONMENT.md
+4)  - Link to ENVIRONMENT.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/ENVIRONMENT.md
+    - Link to SE_INTRO_NOTES.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/SE_INTRO_NOTES.md
