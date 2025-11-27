@@ -1,12 +1,14 @@
 1. **บทบาทของวิศวกรซอฟต์แวร์ (Software Engineer Role)**
 
    - อธิบายโดยรวม 5–7 บรรทัด ว่า “วิศวกรซอฟต์แวร์ทำอะไร”  
+     ออกแบบระบบ UX/UI การพัมนาซอฟต์แวร์ พัฒนา Web App ให้ทันสมัยสวยงามเหมาะแก่ผู้ใช้ ได้เรียนรู้การทำงานเป็นทีมแบบแชร์การทำงาน การเขียนโปรแกรมแบบ Full-stack การวิเคราะห์หรือทดสอบระบบ
    - ระบุตัวอย่างงาน/กิจกรรม เช่น  
      - วิเคราะห์ requirement  
      - ออกแบบระบบ  
      - เขียนโค้ด/ทดสอบ  
      - ประสานงานกับทีมอื่น  
-   - ใส่ bullet list ของบทบาทอื่นในทีม เช่น QA, DevOps, Product Owner, Business Analyst อย่างน้อย 3–4 บทบาท  
+   - ใส่ bullet list ของบทบาทอื่นในทีม เช่น QA, DevOps, Product Owner, Business Analyst อย่างน้อย 3–4 บทบาท 
+   = SA,Tester,Frontend 
 
 2. **ภาพรวม SDLC (Software Development Life Cycle)**
 
