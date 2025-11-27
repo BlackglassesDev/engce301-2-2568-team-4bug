@@ -1,3 +1,10 @@
+# ENGCE301
+Software Design and Development
+
+# ข้อมูลกลุ่ม
+กลุ่ม 4Bug
+
+
 ## DevTools Reflection (Week 1)
 
 1) Browser รู้ได้อย่างไรว่าต้องรัน JavaScript ใน `<script>` เมื่อโหลดหน้าเว็บ?
