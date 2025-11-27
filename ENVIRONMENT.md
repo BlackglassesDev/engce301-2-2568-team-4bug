@@ -28,6 +28,6 @@
 
 ### นางสาว อรนุช  ลุงหลิ่ง
 - OS: Edition	Windows 10
-- Git version: 2.43.0
-- Node.js version: v20.19.5
+- Git version: 2.52.0.windows.1
+- Node.js version: v18.20.8
 - npm version: 10.8.2
