@@ -11,6 +11,8 @@
    → ให้สมาชิกแต่ละคนตอบสั้น ๆ คนละ 1–2 บรรทัด พร้อมระบุชื่อในวงเล็บ เช่น  
    - (A) ชอบ Console เพราะใช้ดู error message ของ JavaScript  
    - (อรนุช ลุงหลิ่ง) ชอบ Elements เพราะมักจะมีปัญหาในส่วนของ UI CSS บ่อย และชอบใช้ส่วนนี้ในการแก้ปัญหาแต่ละครั้งไม่ว่าจะเป็นปัญหาในเรื่อง เช่น การจัดวางที่เพี้ยน หรือเจอบัคโค้ดไม่แสดงบนเว็บจริง
+   - (จิดาภา กันทวงศ์) น่าจะ Elements คิดว่าจะได้ใชบ่อยสุดในเทอมนี้เพราะชอบใช้ส่วนนี้ในการแก้หน้าเว็บและศึกษาว่าแก้แล้วจะออกมา
+   เป็นอย่างไร
 
 4)  - Link to ENVIRONMENT.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/ENVIRONMENT.md
     - Link to SE_INTRO_NOTES.md: https://github.com/BlackglassesDev/engce301-2-2568-team-4bug/blob/main/SE_INTRO_NOTES.md
