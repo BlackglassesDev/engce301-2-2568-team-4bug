@@ -15,13 +15,13 @@
 - npm version: 10.9.2
 
 ### นาย ชนาธิป  ระวิมี
-- OS: xxxx
-- Git version: xxxxx
-- Node.js version: xxxxxxx
-- npm version: xxxxxx
+- OS: Windows 10 Education
+- Git version: 2.52.0.windows.1
+- Node.js version: v24.11.1
+- npm version: 11.6.2
 
 ### นางสาว จิดาภา กันทวงศ์
-- OS: Windows 11git
+- OS: Windows 11
 - Git version: 2.52.0.windows.1
 - Node.js version: v22.17.0
 - npm version: 10.9.2
