@@ -5,7 +5,14 @@ Software Design and Development
 กลุ่ม 4Bug
 
 ## สมาชิกในกลุ่ม
-1. นาย ชโนดม อองกุลนะ รหัส 67543206045-6 [(GitHub)](https://github.com/BlackglassesDev)
-2. นาย ชนาธิป  ระวิมี รหัส 67543206044-9 [(GitHub)](https://github.com/Tipnacha)
-3. นางสาว จิดาภา กันทวงศ์ รหัส 67543206042-3 [(GitHub)](https://github.com/Jidapakantawong)
-4. นางสาว อรนุช  ลุงหลิ่ง รหัส 67543206031-6 [(GitHub)](https://github.com/nuch-oranuch)
+| ชื่อ - นามสกุล | รหัสนักศึกษา | Github |
+| :---: | :---: | :---: | 
+| นาย ชโนดม อองกุลนะ | 67543206045-6 | [(BlackglassesDev)](https://github.com/BlackglassesDev) |
+| นาย ชนาธิป  ระวิมี | 67543206044-9 | [(Tipnacha)](https://github.com/Tipnacha) |
+| นางสาว จิดาภา กันทวงศ์ | 67543206042-3 | [(Jidapakantawong)](https://github.com/Jidapakantawong) |
+| นางสาว อรนุช  ลุงหลิ่ง | 67543206031-6 | [(nuch-oranuch)](https://github.com/nuch-oranuch) |
+
+## ไฟล์สำคัญ
+ - [LAB3_UseCase.md](LAB3_UseCase.md) - Main Flow + Alternative Flows
+ - [Use_Case_Diagram] - Show Use Case Diagram
+ - [Product_Backlog](https://miro.com/app/board/uXjVJkXIgQI=/) - Miro of Group 4Bug

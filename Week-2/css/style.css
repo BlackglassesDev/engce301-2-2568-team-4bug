@@ -9,19 +9,21 @@
 
 :root {
     /* =================================
-       Color Palette: Unique & Energetic (Purple Theme)
+       Color Palette: DARK MODE (Deep Purple Theme)
        ================================= */
-    --primary-color: #5A189A;    /* ม่วงเข้มจัด (Deep Purple - Brand/Trust) */
-    --secondary-color: #9D4EDD;  /* ม่วงสด (Vibrant Purple - Highlight/Energy) */
-    --accent-color: #FF70A6;     /* ชมพู/บานเย็น (Pink/Fuchsia - Focus/Action) */
-    --danger-color: #E53935;     /* แดง (Error/Danger) */
-    --light-color: #FFFFFF;      /* สีขาวบริสุทธิ์ */
-    --soft-light-color: #F8F9FA; /* สีขาวนุ่มนวล (Soft Background) */
-    --background-alt: #EBE9F5;   /* สีพื้นหลังรอง (Very Light Lavender) */
-    --dark-color: #2D004D;       /* ม่วงเข้มเกือบดำ (Footer/Major Headings) */
-    --text-color: #3C4A60;       /* ข้อความทั่วไป (Dark Blue-Grey) */
+    --primary-color: #BB86FC;    /* ม่วงสว่าง (Primary - เน้นความโดดเด่น) */
+    --secondary-color: #03DAC6;  /* ฟ้า/เขียวอ่อน (Secondary - สำหรับ Highlight/Link Hover) */
+    --accent-color: #FF70A6;     /* ชมพู/บานเย็น (Accent - CTA/Icon/Ranking) */
+    --danger-color: #CF6679;     /* แดง (Error/Danger) */
     
-    /* Typography - ปรับฟอนต์ให้ทันสมัยและมีน้ำหนักมากขึ้น */
+    --background-dark: #121212;  /* พื้นหลังหลัก (เกือบดำสนิท) */
+    --surface-dark: #1F1F1F;     /* พื้นหลังรอง/Card (เข้มกว่า BG เล็กน้อย) */
+    --text-light: #E0E0E0;       /* สีข้อความหลัก (ขาวอ่อน) */
+    --text-secondary-light: #B0B0B0; /* สีข้อความรอง/คำบรรยาย */
+    
+    --dark-color: #BB86FC;       
+    
+    /* Typography */
     --font-primary: 'Inter', 'Kanit', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-size-base: 17px; 
     --font-size-lg: 1.25rem;
@@ -43,8 +45,8 @@ html {
 body {
     font-family: var(--font-primary);
     line-height: 1.7; 
-    color: var(--text-color);
-    background-color: var(--soft-light-color); 
+    color: var(--text-light); 
+    background-color: var(--background-dark); 
     perspective: 1500px; 
 }
 
@@ -55,25 +57,25 @@ body {
     padding: 0 calc(var(--spacing-unit) * 2);
 }
 
-/* Headings - ปรับลดความหนาเป็น 700 */
+/* Headings */
 h1, h2, h3 {
-    color: var(--dark-color);
-    font-weight: 700; /* ลดความหนาจาก 800 */
+    color: var(--primary-color); 
+    font-weight: 700; 
 }
 
 section h2 {
     font-size: var(--font-size-xl);
     text-align: center;
     margin-bottom: 0.5rem;
-    color: var(--dark-color);
-    font-weight: 700; /* ลดความหนาจาก 900 */
+    color: var(--primary-color);
+    font-weight: 700; 
 }
 
 .section-description {
     text-align: center;
     font-size: 1.3rem; 
-    font-weight: 500; /* เพิ่มความหนาจาก 400 */
-    color: var(--text-color);
+    font-weight: 500; 
+    color: var(--text-secondary-light); 
     margin-bottom: 3rem;
     max-width: 800px;
     margin-left: auto;
@@ -85,7 +87,7 @@ section h2 {
     display: inline-block;
     padding: 1rem 2.2rem; 
     font-size: 1.1rem; 
-    font-weight: 600; /* ลดความหนาจาก 700 */
+    font-weight: 600; 
     text-align: center;
     text-decoration: none;
     border: none;
@@ -96,27 +98,27 @@ section h2 {
 
 .btn-primary {
     background-color: var(--primary-color); 
-    color: white;
-    box-shadow: 0 6px 15px rgba(90, 24, 154, 0.4); 
+    color: var(--background-dark); 
+    box-shadow: 0 6px 15px rgba(187, 134, 252, 0.4); 
     animation: softPulse 2s ease-in-out 3; 
 }
 
 .btn-primary:hover {
-    background-color: #451378; 
+    background-color: #D7B3FF; 
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(90, 24, 154, 0.6);
+    box-shadow: 0 8px 20px rgba(187, 134, 252, 0.6);
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--accent-color);
+    color: var(--accent-color); 
     border: 2px solid var(--accent-color);
     box-shadow: 0 2px 5px rgba(255, 112, 166, 0.2);
 }
 
 .btn-secondary:hover {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--background-dark); 
     box-shadow: 0 4px 10px rgba(255, 112, 166, 0.4);
 }
 
@@ -127,14 +129,14 @@ section h2 {
 }
 
 /* ===========================
-    HEADER
+    HEADER & NAVIGATION - ปรับขนาด Icon ให้ Minimal ยิ่งขึ้น
     =========================== */
 .main-header {
-    background-color: var(--light-color); 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); 
+    background-color: var(--surface-dark); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; 
     padding: 1rem 0;
 }
 
@@ -150,39 +152,120 @@ section h2 {
 }
 
 .logo h1 {
-    font-size: 2rem; 
-    font-weight: 700; /* ลดความหนาจาก 900 */
+    font-size: 1rem; 
+    font-weight: 400; 
     color: var(--primary-color); 
 }
 
 .logo img{
-    width: 50px;
+    width: 80px;
 }
 
 .main-nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem; /* ระยะห่างระหว่าง Link */
+}
+
+/* Base style สำหรับ Navigation Link (Self-Contained Block) */
+.main-nav li {
+    position: relative; 
+    z-index: 10;
 }
 
 .main-nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-secondary-light); 
     font-weight: 500;
-    transition: color 0.3s, border-bottom 0.3s;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    /* ขนาดเริ่มต้น (Icon Minimal) */
+    width: 48px; 
+    height: 48px;
+    padding: 0;
+    border-radius: 50%; 
+    overflow: visible; 
+    
+    /* เพิ่มเงาเริ่มต้นเล็กน้อย */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
-.main-nav a:hover {
-    color: var(--secondary-color); 
-    border-bottom: 3px solid var(--secondary-color); 
-    padding-bottom: 5px;
+/* 1. Icon State (Default) */
+.main-nav a i {
+    font-size: 1.1rem; /* ปรับขนาด Icon ให้เล็กลงอีก (จาก 1.5rem เป็น 1.1rem) */
+    transition: opacity 0.3s, transform 0.3s;
+    color: var(--primary-color); /* ใช้ Secondary Color ให้ Icon เด่น */
+}
+
+/* 2. Text State (ซ่อนไว้ก่อน) */
+.main-nav a::before {
+    content: attr(data-text); 
+    position: absolute;
+    top: 50%;
+    
+    /* ปรับตำแหน่งเริ่มต้นของข้อความให้ชิดซ้ายของ Link เดิม */
+    left: 24px; 
+    
+    transform: translate(-50%, -50%) scale(0.8); 
+    opacity: 0;
+    font-weight: 500; /* ความหนาของข้อความ */
+    font-size: 0.9rem; 
+    color: var(--text-light); 
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap; 
+    z-index: 1; 
+    
+    /* สไตล์เพิ่มเติมสำหรับข้อความ */
+    padding: 0 15px; 
+}
+
+/* 3. HOVER / ACTIVE Effect */
+.main-nav a:hover,
+.main-nav a.active { 
+    /* พื้นหลัง Hover/Active - เพิ่มความโดดเด่น */
+    background-color: rgba(187, 134, 252, 0.15); 
+    color: var(--primary-color); 
+    
+    /* ขนาดเมื่อขยายตัว */
+    width: auto; 
+    min-width: 48px;
+    height: 48px;
+    padding: 0 15px; 
+    border-radius: 8px;
+    
+    /* เพิ่มเงาเรืองแสงสี Primary เมื่อ Hover/Active */
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.5), 0 0 5px rgba(0, 0, 0, 0.8); 
+    
+    /* เปลี่ยนจาก Flex Center เป็นชิดซ้ายเพื่อรองรับการขยายตัว */
+    justify-content: flex-start; 
+}
+
+.main-nav a:hover i,
+.main-nav a.active i {
+    opacity: 0;
+    transform: scale(0); 
+    
+    /* เมื่อ Icon หายไป จะไม่มีพื้นที่เหลืออยู่ */
+    width: 0; 
+    height: 0;
+}
+
+.main-nav a:hover::before,
+.main-nav a.active::before {
+    opacity: 1;
+    /* ปรับให้ข้อความอยู่ตรงกลางของบล็อกที่ขยายตัว */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); 
 }
 
 /* ===========================
     HERO SECTION - จัดวางแบบ WOW! และ 3D
     =========================== */
 .hero-section {
-    background: linear-gradient(150deg, var(--secondary-color) 0%, var(--primary-color) 100%); 
+    background: linear-gradient(150deg, #1f1f1f 0%, #000000 100%); 
     color: white; 
     text-align: left; 
     padding: 8rem 0; 
@@ -217,16 +300,16 @@ section h2 {
     width: 100%;
     max-width: 500px;
     height: 300px;
-    background-color: rgba(255, 255, 255, 0.15); 
+    background-color: rgba(187, 134, 252, 0.15); 
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 0 30px rgba(187, 134, 252, 0.3); /* เงาเรืองแสง */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 600;
-    border: 3px solid white;
+    border: 3px solid var(--primary-color); 
     
     /* 3D Transform เริ่มต้น */
     transform: rotateY(-10deg) rotateX(5deg) scale(1); 
@@ -238,22 +321,20 @@ section h2 {
     transform: rotateY(-5deg) rotateX(2deg) scale(1.02); 
 }
 
-/* หัวข้อใหญ่ Hero Title */
 .hero-title {
     font-size: 3.75rem; 
     margin-bottom: 1.5rem;
-    font-weight: 800; /* ลดความหนาจาก 900 */
+    font-weight: 600; 
     line-height: 1.1; 
-    color: white; 
+    color: var(--secondary-color); 
 }
 
-/* คำบรรยาย Hero Description */
 .hero-description {
     font-size: 1.2rem; 
     margin-bottom: 2.5rem;
     max-width: none; 
-    color: #F8F9FA; 
-    font-weight: 500; /* ปรับเพิ่มความหนาให้คมชัด */
+    color: var(--text-light); 
+    font-weight: 500; 
 }
 
 .hero-cta {
@@ -270,11 +351,12 @@ section {
     padding: 4rem 0;
 }
 
-.problem-section, .how-section {
-    background-color: var(--light-color); 
+/* พื้นหลังสลับระหว่าง Dark และ Surface Dark */
+.problem-section, .how-section, .about-section, .contact-section {
+    background-color: var(--background-dark); 
 }
-.about-section, .contact-section, .features-section {
-    background-color: var(--background-alt); 
+.features-section, .team-section {
+    background-color: var(--surface-dark); 
 }
 
 /* Features Grid */
@@ -285,24 +367,26 @@ section {
     margin-top: 3rem;
 }
 
-/* FEATURE CARDS: Interactive 3D Tilt */
+/* FEATURE CARDS: Interactive 3D Tilt + Glow */
 .feature-card {
-    background: var(--light-color);
+    background: var(--surface-dark); 
     padding: 2rem;
     border-radius: 15px; 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); 
+    /* Soft Glow Effect */
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.2); 
     border-top: 5px solid var(--secondary-color); 
     text-align: left; 
     
     transform-style: preserve-3d; 
     transform: translateZ(0); 
     transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    color: var(--text-light);
 }
 
-/* 3D Tilt Effect เมื่อนำเมาส์ไปชี้ */
+/* 3D Tilt Effect เมื่อนำเมาส์ไปชี้ - เพิ่ม Glow ให้โดดเด่น */
 .feature-card:hover {
     transform: translateY(-10px) rotateX(2deg) rotateY(2deg); 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 25px rgba(187, 134, 252, 0.4), 0 0 50px rgba(3, 218, 198, 0.1); 
 }
 
 .feature-icon {
@@ -313,9 +397,9 @@ section {
 
 .feature-card h3 {
     font-size: 1.7rem; 
-    font-weight: 600; /* ลดความหนาจาก 700 */
+    font-weight: 600; 
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--primary-color); 
 }
 
 /* How It Works Section */
@@ -330,9 +414,10 @@ section {
     flex: 1; 
     text-align: center;
     padding: 1.5rem;
-    background-color: var(--light-color);
+    background-color: var(--surface-dark); 
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
 }
 
 .step-number {
@@ -342,7 +427,7 @@ section {
     line-height: 50px;
     border-radius: 10px; 
     background-color: var(--accent-color); 
-    color: white; 
+    color: var(--background-dark); 
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -350,6 +435,7 @@ section {
 
 .step h3 {
     font-size: 1.3rem;
+    color: var(--primary-color);
 }
 
 /* Team Section */
@@ -362,15 +448,16 @@ section {
 
 .team-member {
     text-align: center;
-    background: var(--light-color);
+    background: var(--surface-dark); 
     padding: 2rem 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
 }
 
 .team-member:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(3, 218, 198, 0.5); /* เรืองแสงสี Secondary เมื่อ Hover */
 }
 
 .team-member img {
@@ -388,23 +475,23 @@ section {
 
 .team-member h3 {
     margin-bottom: 0.5rem;
-    color: var(--dark-color);
+    color: var(--primary-color);
 }
 
 .team-member .role {
-    color: var(--primary-color); 
-    font-weight: 600; /* ลดความหนาจาก 700 */
+    color: var(--secondary-color); 
+    font-weight: 600; 
     margin-bottom: 0.25rem;
 }
 
 .team-member .student-id {
-    color: var(--text-color);
+    color: var(--text-secondary-light);
     font-size: 0.9rem;
 }
 
 /* Contact/CTA Section */
 .contact-section {
-    background-color: var(--background-alt); 
+    background-color: var(--background-dark); 
     text-align: center;
 }
 
@@ -412,8 +499,8 @@ section {
     FOOTER
     =========================== */
 .main-footer {
-    background-color: var(--dark-color); 
-    color: var(--background-alt); 
+    background-color: #000000; 
+    color: var(--text-secondary-light); 
     padding: 3rem 0 1rem;
     margin-top: 4rem;
 }
@@ -437,13 +524,13 @@ section {
 }
 
 .footer-links a {
-    color: var(--background-alt);
+    color: var(--text-secondary-light);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    color: var(--accent-color); 
+    color: var(--secondary-color); 
 }
 
 .footer-bottom {
